@@ -1053,6 +1053,18 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hxEicCT0EeyUiKkptB43TQ" value="1"/>
     </ownedEnd>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kj64ACUJEeyUiKkptB43TQ" name="Systeme">
+    <ownedOperation xmi:id="_FYndICUKEeyUiKkptB43TQ" name="generateHTML"/>
+    <ownedOperation xmi:id="_L6cycCUKEeyUiKkptB43TQ" name="analyseGraphe">
+      <ownedParameter xmi:id="_cyMysCUKEeyUiKkptB43TQ" name="Parameter1" direction="return">
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_l89coCULEeyUiKkptB43TQ" name="createHTML"/>
+    <ownedOperation xmi:id="_0m4TYCULEeyUiKkptB43TQ" name="confirmationCreation"/>
+    <ownedOperation xmi:id="_BhrV4CUMEeyUiKkptB43TQ" name="generatePDF"/>
+    <ownedOperation xmi:id="_GdVXkCUMEeyUiKkptB43TQ" name="createPDF"/>
+  </packagedElement>
   <profileApplication xmi:id="_vr6vGB9dEeymALj9GuvuEw">
     <eAnnotations xmi:id="_vr6vGR9dEeymALj9GuvuEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
