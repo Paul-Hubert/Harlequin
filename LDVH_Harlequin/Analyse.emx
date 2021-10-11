@@ -1054,16 +1054,16 @@
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_kj64ACUJEeyUiKkptB43TQ" name="Systeme">
-    <ownedOperation xmi:id="_FYndICUKEeyUiKkptB43TQ" name="generateHTML"/>
+    <ownedOperation xmi:id="_FYndICUKEeyUiKkptB43TQ" name="generationHTML"/>
     <ownedOperation xmi:id="_L6cycCUKEeyUiKkptB43TQ" name="analyseGraphe">
       <ownedParameter xmi:id="_cyMysCUKEeyUiKkptB43TQ" name="Parameter1" direction="return">
         <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:id="_l89coCULEeyUiKkptB43TQ" name="createHTML"/>
+    <ownedOperation xmi:id="_l89coCULEeyUiKkptB43TQ" name="creationHTML"/>
     <ownedOperation xmi:id="_0m4TYCULEeyUiKkptB43TQ" name="confirmationCreation"/>
-    <ownedOperation xmi:id="_BhrV4CUMEeyUiKkptB43TQ" name="generatePDF"/>
-    <ownedOperation xmi:id="_GdVXkCUMEeyUiKkptB43TQ" name="createPDF"/>
+    <ownedOperation xmi:id="_BhrV4CUMEeyUiKkptB43TQ" name="generationPDF"/>
+    <ownedOperation xmi:id="_GdVXkCUMEeyUiKkptB43TQ" name="creationPDF"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Collaboration" xmi:id="_pWxNcCpjEey77ZPdSVNwGA" name="Collaboration1">
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_4cLmACpmEey-7NDA07Mf2w" name="Interaction3">
@@ -1191,8 +1191,8 @@
           </children>
         </contents>
       </eAnnotations>
-      <lifeline xmi:id="_Pgj9ECpmEey-7NDA07Mf2w" name="auteur" represents="_PgkkICpmEey-7NDA07Mf2w"/>
-      <lifeline xmi:id="_P2wPgCpmEey-7NDA07Mf2w" name="systeme" represents="_P2w2kCpmEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_Pgj9ECpmEey-7NDA07Mf2w" name="auteur"/>
+      <lifeline xmi:id="_P2wPgCpmEey-7NDA07Mf2w" name="systeme"/>
     </ownedBehavior>
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_gAtAgCpkEey77ZPdSVNwGA" name="Interaction5">
       <eAnnotations xmi:id="_gAvcwCpkEey77ZPdSVNwGA" source="uml2.diagrams">
@@ -1223,8 +1223,8 @@
           </children>
         </contents>
       </eAnnotations>
-      <lifeline xmi:id="_OtgIcCpmEey-7NDA07Mf2w" name="auteur" represents="_OtgvgCpmEey-7NDA07Mf2w"/>
-      <lifeline xmi:id="_O-H-YCpmEey-7NDA07Mf2w" name="systeme" represents="_O-IlcCpmEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_OtgIcCpmEey-7NDA07Mf2w" name="auteur"/>
+      <lifeline xmi:id="_O-H-YCpmEey-7NDA07Mf2w" name="systeme"/>
     </ownedBehavior>
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_aOB3QCpkEey77ZPdSVNwGA" name="Interaction7">
       <eAnnotations xmi:id="_aODscCpkEey77ZPdSVNwGA" source="uml2.diagrams">
@@ -1255,8 +1255,8 @@
           </children>
         </contents>
       </eAnnotations>
-      <lifeline xmi:id="_N0OXECpmEey-7NDA07Mf2w" name="auteur" represents="_N0O-ICpmEey-7NDA07Mf2w"/>
-      <lifeline xmi:id="_OMJH0CpmEey-7NDA07Mf2w" name="systeme" represents="_OMJu4CpmEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_N0OXECpmEey-7NDA07Mf2w" name="auteur"/>
+      <lifeline xmi:id="_OMJH0CpmEey-7NDA07Mf2w" name="systeme"/>
     </ownedBehavior>
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_GsfxUCpkEey77ZPdSVNwGA" name="Interaction4">
       <eAnnotations xmi:id="_Gsi0oCpkEey77ZPdSVNwGA" source="uml2.diagrams">
@@ -1287,8 +1287,8 @@
           </children>
         </contents>
       </eAnnotations>
-      <lifeline xmi:id="_MV5-8CpmEey-7NDA07Mf2w" name="auteur" represents="_MV6mACpmEey-7NDA07Mf2w"/>
-      <lifeline xmi:id="_MwUqECpmEey-7NDA07Mf2w" name="systeme" represents="_MwVRICpmEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_MV5-8CpmEey-7NDA07Mf2w" name="auteur"/>
+      <lifeline xmi:id="_MwUqECpmEey-7NDA07Mf2w" name="systeme"/>
     </ownedBehavior>
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_tz9xgCpjEey77ZPdSVNwGA" name="Interaction10">
       <eAnnotations xmi:id="_tz_msCpjEey77ZPdSVNwGA" source="uml2.diagrams">
@@ -1392,16 +1392,8 @@
           </edges>
         </contents>
       </eAnnotations>
-      <ownedConnector xmi:id="_5dnqUCplEey-7NDA07Mf2w">
-        <end xmi:id="_5dnqUSplEey-7NDA07Mf2w" role="_2nGJICplEey-7NDA07Mf2w"/>
-        <end xmi:id="_5doRYCplEey-7NDA07Mf2w" role="_2J7E8SplEey-7NDA07Mf2w"/>
-      </ownedConnector>
-      <ownedConnector xmi:id="_7hzIkSplEey-7NDA07Mf2w">
-        <end xmi:id="_7hzIkiplEey-7NDA07Mf2w" role="_2nGJICplEey-7NDA07Mf2w"/>
-        <end xmi:id="_7hzvoCplEey-7NDA07Mf2w" role="_2nGJICplEey-7NDA07Mf2w"/>
-      </ownedConnector>
-      <lifeline xmi:id="_2J7E8CplEey-7NDA07Mf2w" name="auteur" represents="_2J7E8SplEey-7NDA07Mf2w" coveredBy="_5dlOECplEey-7NDA07Mf2w _5dnDQSplEey-7NDA07Mf2w"/>
-      <lifeline xmi:id="_2nFiECplEey-7NDA07Mf2w" name="systeme" represents="_2nGJICplEey-7NDA07Mf2w" coveredBy="_5dl1ICplEey-7NDA07Mf2w _5dmcMCplEey-7NDA07Mf2w _5dmcMSplEey-7NDA07Mf2w _7hwsUCplEey-7NDA07Mf2w _7hxTYCplEey-7NDA07Mf2w _7hx6cCplEey-7NDA07Mf2w _7hx6cSplEey-7NDA07Mf2w _7hzIkCplEey-7NDA07Mf2w _8w5Y8SplEey-7NDA07Mf2w _8w6AACplEey-7NDA07Mf2w _8w6nECplEey-7NDA07Mf2w _8w7OICplEey-7NDA07Mf2w _8w71MCplEey-7NDA07Mf2w _-ngVQCplEey-7NDA07Mf2w _-ng8UCplEey-7NDA07Mf2w _-ng8USplEey-7NDA07Mf2w _-nhjYCplEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_2J7E8CplEey-7NDA07Mf2w" name="auteur" coveredBy="_5dlOECplEey-7NDA07Mf2w _5dnDQSplEey-7NDA07Mf2w"/>
+      <lifeline xmi:id="_2nFiECplEey-7NDA07Mf2w" name="systeme" coveredBy="_5dl1ICplEey-7NDA07Mf2w _5dmcMCplEey-7NDA07Mf2w _5dmcMSplEey-7NDA07Mf2w _7hwsUCplEey-7NDA07Mf2w _7hxTYCplEey-7NDA07Mf2w _7hx6cCplEey-7NDA07Mf2w _7hx6cSplEey-7NDA07Mf2w _7hzIkCplEey-7NDA07Mf2w _8w5Y8SplEey-7NDA07Mf2w _8w6AACplEey-7NDA07Mf2w _8w6nECplEey-7NDA07Mf2w _8w7OICplEey-7NDA07Mf2w _8w71MCplEey-7NDA07Mf2w _-ngVQCplEey-7NDA07Mf2w _-ng8UCplEey-7NDA07Mf2w _-ng8USplEey-7NDA07Mf2w _-nhjYCplEey-7NDA07Mf2w"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5dlOECplEey-7NDA07Mf2w" covered="_2J7E8CplEey-7NDA07Mf2w" event="_6JOMECplEey-7NDA07Mf2w" message="_5dknACplEey-7NDA07Mf2w"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5dl1ICplEey-7NDA07Mf2w" covered="_2nFiECplEey-7NDA07Mf2w" event="_6JOzICplEey-7NDA07Mf2w" message="_5dknACplEey-7NDA07Mf2w"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_5dmcMCplEey-7NDA07Mf2w" covered="_2nFiECplEey-7NDA07Mf2w" start="_5dl1ICplEey-7NDA07Mf2w" finish="_5dmcMSplEey-7NDA07Mf2w"/>
@@ -1421,13 +1413,13 @@
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_-nhjYCplEey-7NDA07Mf2w" covered="_2nFiECplEey-7NDA07Mf2w" event="_uhdewCplEey-7NDA07Mf2w" execution="_-ng8USplEey-7NDA07Mf2w"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5dmcMSplEey-7NDA07Mf2w" covered="_2nFiECplEey-7NDA07Mf2w" event="_6JOMECplEey-7NDA07Mf2w" message="_5dnDQCplEey-7NDA07Mf2w"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5dnDQSplEey-7NDA07Mf2w" covered="_2J7E8CplEey-7NDA07Mf2w" event="_6JOzICplEey-7NDA07Mf2w" message="_5dnDQCplEey-7NDA07Mf2w"/>
-      <message xmi:id="_5dknACplEey-7NDA07Mf2w" name="generatePDF" receiveEvent="_5dl1ICplEey-7NDA07Mf2w" sendEvent="_5dlOECplEey-7NDA07Mf2w" connector="_5dnqUCplEey-7NDA07Mf2w"/>
-      <message xmi:id="_5dnDQCplEey-7NDA07Mf2w" name="generatePDF" messageSort="reply" receiveEvent="_5dnDQSplEey-7NDA07Mf2w" sendEvent="_5dmcMSplEey-7NDA07Mf2w" connector="_5dnqUCplEey-7NDA07Mf2w"/>
-      <message xmi:id="_7hwFQCplEey-7NDA07Mf2w" name="analyseGraphe" receiveEvent="_7hxTYCplEey-7NDA07Mf2w" sendEvent="_7hwsUCplEey-7NDA07Mf2w" connector="_7hzIkSplEey-7NDA07Mf2w"/>
-      <message xmi:id="_7hyhgCplEey-7NDA07Mf2w" name="analyseGraphe" messageSort="reply" receiveEvent="_7hzIkCplEey-7NDA07Mf2w" sendEvent="_7hx6cSplEey-7NDA07Mf2w" connector="_7hzIkSplEey-7NDA07Mf2w"/>
-      <message xmi:id="_8w5Y8CplEey-7NDA07Mf2w" name="createPDF" receiveEvent="_8w6AACplEey-7NDA07Mf2w" sendEvent="_8w5Y8SplEey-7NDA07Mf2w" connector="_7hzIkSplEey-7NDA07Mf2w"/>
-      <message xmi:id="_8w7OISplEey-7NDA07Mf2w" name="createPDF" messageSort="reply" receiveEvent="_8w71MCplEey-7NDA07Mf2w" sendEvent="_8w7OICplEey-7NDA07Mf2w" connector="_7hzIkSplEey-7NDA07Mf2w"/>
-      <message xmi:id="_-nfuMCplEey-7NDA07Mf2w" name="confirmationCreation" messageSort="asynchCall" receiveEvent="_-ng8UCplEey-7NDA07Mf2w" sendEvent="_-ngVQCplEey-7NDA07Mf2w" connector="_7hzIkSplEey-7NDA07Mf2w"/>
+      <message xmi:id="_5dknACplEey-7NDA07Mf2w" name="generatePDF" receiveEvent="_5dl1ICplEey-7NDA07Mf2w" sendEvent="_5dlOECplEey-7NDA07Mf2w"/>
+      <message xmi:id="_5dnDQCplEey-7NDA07Mf2w" name="generatePDF" messageSort="reply" receiveEvent="_5dnDQSplEey-7NDA07Mf2w" sendEvent="_5dmcMSplEey-7NDA07Mf2w"/>
+      <message xmi:id="_7hwFQCplEey-7NDA07Mf2w" name="analyseGraphe" receiveEvent="_7hxTYCplEey-7NDA07Mf2w" sendEvent="_7hwsUCplEey-7NDA07Mf2w"/>
+      <message xmi:id="_7hyhgCplEey-7NDA07Mf2w" name="analyseGraphe" messageSort="reply" receiveEvent="_7hzIkCplEey-7NDA07Mf2w" sendEvent="_7hx6cSplEey-7NDA07Mf2w"/>
+      <message xmi:id="_8w5Y8CplEey-7NDA07Mf2w" name="createPDF" receiveEvent="_8w6AACplEey-7NDA07Mf2w" sendEvent="_8w5Y8SplEey-7NDA07Mf2w"/>
+      <message xmi:id="_8w7OISplEey-7NDA07Mf2w" name="createPDF" messageSort="reply" receiveEvent="_8w71MCplEey-7NDA07Mf2w" sendEvent="_8w7OICplEey-7NDA07Mf2w"/>
+      <message xmi:id="_-nfuMCplEey-7NDA07Mf2w" name="confirmationCreation" messageSort="asynchCall" receiveEvent="_-ng8UCplEey-7NDA07Mf2w" sendEvent="_-ngVQCplEey-7NDA07Mf2w"/>
     </ownedBehavior>
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_9yrJkCpmEey-7NDA07Mf2w" name="Interaction8">
       <eAnnotations xmi:id="_9ys-wCpmEey-7NDA07Mf2w" source="uml2.diagrams">
@@ -1603,26 +1595,6 @@
     <ownedAttribute xmi:id="_ePlLsCplEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
     <ownedAttribute xmi:id="_fMgG8CplEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_tz78UCpjEey77ZPdSVNwGA" name="Collaboration2">
-    <ownedAttribute xmi:id="_2J7E8SplEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
-    <ownedAttribute xmi:id="_2nGJICplEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_Gsd8ICpkEey77ZPdSVNwGA" name="Collaboration3">
-    <ownedAttribute xmi:id="_MV6mACpmEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
-    <ownedAttribute xmi:id="_MwVRICpmEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_aN_bACpkEey77ZPdSVNwGA" name="Collaboration4">
-    <ownedAttribute xmi:id="_N0O-ICpmEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
-    <ownedAttribute xmi:id="_OMJu4CpmEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_gAqkQCpkEey77ZPdSVNwGA" name="Collaboration5">
-    <ownedAttribute xmi:id="_OtgvgCpmEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
-    <ownedAttribute xmi:id="_O-IlcCpmEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_iZJekCpkEey77ZPdSVNwGA" name="Collaboration6">
-    <ownedAttribute xmi:id="_PgkkICpmEey-7NDA07Mf2w" name="auteur" type="_SAwu0B93Eeyf7tQZEHnh_g"/>
-    <ownedAttribute xmi:id="_P2w2kCpmEey-7NDA07Mf2w" name="systeme" type="_kj64ACUJEeyUiKkptB43TQ"/>
-  </packagedElement>
   <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_l5ZcwCplEey-7NDA07Mf2w" name="SendOperationEvent1" operation="_FYndICUKEeyUiKkptB43TQ"/>
   <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_l5aD0CplEey-7NDA07Mf2w" name="ReceiveOperationEvent1" operation="_FYndICUKEeyUiKkptB43TQ"/>
   <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_q16aECplEey-7NDA07Mf2w" name="SendOperationEvent2" operation="_L6cycCUKEeyUiKkptB43TQ"/>
@@ -1636,10 +1608,6 @@
   <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_6JOzICplEey-7NDA07Mf2w" name="ReceiveOperationEvent5" operation="_BhrV4CUMEeyUiKkptB43TQ"/>
   <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_9ad6YCplEey-7NDA07Mf2w" name="SendOperationEvent6" operation="_GdVXkCUMEeyUiKkptB43TQ"/>
   <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_9aehcCplEey-7NDA07Mf2w" name="ReceiveOperationEvent6" operation="_GdVXkCUMEeyUiKkptB43TQ"/>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_wn38MCpmEey-7NDA07Mf2w" name="Collaboration7"/>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_0YAl8CpmEey-7NDA07Mf2w" name="Collaboration8"/>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_4cJw0CpmEey-7NDA07Mf2w" name="Collaboration9"/>
-  <packagedElement xmi:type="uml:Collaboration" xmi:id="_9ypUYCpmEey-7NDA07Mf2w" name="Collaboration10"/>
   <profileApplication xmi:id="_vr6vGB9dEeymALj9GuvuEw">
     <eAnnotations xmi:id="_vr6vGR9dEeymALj9GuvuEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
