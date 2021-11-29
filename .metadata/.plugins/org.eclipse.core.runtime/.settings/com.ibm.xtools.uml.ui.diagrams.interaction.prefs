@@ -1,0 +1,6 @@
+default\ show\ signatures=true
+eclipse.preferences.version=1
+msg\ numbering=0
+show\ message\ names\ not\ signatures=false
+show\ operation\ signatures=false
+show\ return\ message\ signature=false
