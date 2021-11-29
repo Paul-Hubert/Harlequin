@@ -1,1 +1,0 @@
-INDEX VERSION 1.130+/users/nfs/Etu1/21116461/SU/IL/TME/Harlequin/.metadata/.plugins/org.eclipse.jdt.core
