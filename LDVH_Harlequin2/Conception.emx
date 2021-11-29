@@ -967,7 +967,7 @@
   <packagedElement xmi:type="uml:Interface" xmi:id="_VVvkAFEDEeyHtIrG4NUXqg" name="ITypeObjet"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_Wk77AFEDEeyHtIrG4NUXqg" name="IGestionnaireGeneration"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_YfY1gFEDEeyHtIrG4NUXqg" name="IGestionnaireAnalyse"/>
-  <packagedElement xmi:type="uml:Component" xmi:id="_ob0dAFEDEeyHtIrG4NUXqg" name="CIHM" clientDependency="_dzFm8FEHEeyHtIrG4NUXqg _e8dp0FEHEeyHtIrG4NUXqg _nGnn0FEHEeyHtIrG4NUXqg _Odz0IFEJEeyHtIrG4NUXqg"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ob0dAFEDEeyHtIrG4NUXqg" name="CIHM" clientDependency="_dzFm8FEHEeyHtIrG4NUXqg _e8dp0FEHEeyHtIrG4NUXqg _Odz0IFEJEeyHtIrG4NUXqg _nGnn0FEHEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_CuVHgFEEEeyHtIrG4NUXqg" name="GestionLivre">
     <eAnnotations xmi:id="_CumNQFEEEeyHtIrG4NUXqg" source="uml2.diagrams" references="_CumNQVEEEeyHtIrG4NUXqg">
       <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_CumNQVEEEeyHtIrG4NUXqg" type="Freeform" name="Informations générales">
@@ -1084,9 +1084,9 @@
   <packagedElement xmi:type="uml:Usage" xmi:id="_dzFm8FEHEeyHtIrG4NUXqg" supplier="_YfY1gFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_e8dp0FEHEeyHtIrG4NUXqg" supplier="_RynbgFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_nGnn0FEHEeyHtIrG4NUXqg" supplier="_QzbPYFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Odz0IFEJEeyHtIrG4NUXqg" supplier="_Wk77AFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_st-R4FEHEeyHtIrG4NUXqg" supplier="_QzbPYFEDEeyHtIrG4NUXqg" client="_fHPlMFEBEeyfRtliTj7SuA"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_uOPx0FEHEeyHtIrG4NUXqg" supplier="_QzbPYFEDEeyHtIrG4NUXqg" client="_OHUOcFEDEeyHtIrG4NUXqg"/>
-  <packagedElement xmi:type="uml:Usage" xmi:id="_Odz0IFEJEeyHtIrG4NUXqg" supplier="_Wk77AFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <profileApplication xmi:id="_5pFhpVEAEeyfRtliTj7SuA">
     <eAnnotations xmi:id="_5pFhplEAEeyfRtliTj7SuA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
