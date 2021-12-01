@@ -959,22 +959,35 @@
     <ownedOperation xmi:id="_XmH-AFJ-Eey86ZbEHZxXpg" name="creerSection"/>
     <ownedOperation xmi:id="_Cbi9AFKGEeyS2NJT3Vczcw" name="setTitre"/>
     <ownedOperation xmi:id="_IrU5AFKGEeyS2NJT3Vczcw" name="ajouterLivreAListe"/>
+    <ownedOperation xmi:id="_U3yO0FKGEeyhyaukYmKzUg" name="sauvegarderLivre"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_OHUOcFEDEeyHtIrG4NUXqg" name="CGeneration" clientDependency="_eEKssFEDEeyHtIrG4NUXqg _uOPx0FEHEeyHtIrG4NUXqg">
     <interfaceRealization xmi:id="_eEKssFEDEeyHtIrG4NUXqg" supplier="_Wk77AFEDEeyHtIrG4NUXqg" client="_OHUOcFEDEeyHtIrG4NUXqg" contract="_Wk77AFEDEeyHtIrG4NUXqg"/>
+    <ownedOperation xmi:id="_aMQEAFKEEey86ZbEHZxXpg" name="creerPDF"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_QzbPYFEDEeyHtIrG4NUXqg" name="ILivre"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_RynbgFEDEeyHtIrG4NUXqg" name="IGestionnaireLivre"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_RynbgFEDEeyHtIrG4NUXqg" name="IGestionnaireLivre">
+    <ownedOperation xmi:id="_65XEcFEFEeyHtIrG4NUXqg" name="chargerLivre"/>
+    <ownedOperation xmi:id="_57aOcFEFEeyHtIrG4NUXqg" name="creerLivre"/>
+    <ownedOperation xmi:id="_8Yps8FEFEeyHtIrG4NUXqg" name="sauvegarderLivre"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_S9FDgFEDEeyHtIrG4NUXqg" name="ISection"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_TuSeAFEDEeyHtIrG4NUXqg" name="IEnchainement"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_Uu18EFEDEeyHtIrG4NUXqg" name="IObjet"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_VVvkAFEDEeyHtIrG4NUXqg" name="ITypeObjet"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_Wk77AFEDEeyHtIrG4NUXqg" name="IGestionnaireGeneration"/>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_YfY1gFEDEeyHtIrG4NUXqg" name="IGestionnaireAnalyse"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Wk77AFEDEeyHtIrG4NUXqg" name="IGestionnaireGeneration">
+    <ownedOperation xmi:id="_qCQTYFKEEey86ZbEHZxXpg" name="generationPDF"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YfY1gFEDEeyHtIrG4NUXqg" name="IGestionnaireAnalyse">
+    <ownedOperation xmi:id="_qvkWYFEFEeyHtIrG4NUXqg" name="analyseGraphe"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_ob0dAFEDEeyHtIrG4NUXqg" name="CIHM" clientDependency="_dzFm8FEHEeyHtIrG4NUXqg _e8dp0FEHEeyHtIrG4NUXqg _Odz0IFEJEeyHtIrG4NUXqg _nGnn0FEHEeyHtIrG4NUXqg">
     <ownedOperation xmi:id="_UzHq4FJ-Eey86ZbEHZxXpg" name="creerSection"/>
     <ownedOperation xmi:id="_-JHegFKFEeyS2NJT3Vczcw" name="creerLivre"/>
     <ownedOperation xmi:id="_eG30kFKGEeyS2NJT3Vczcw" name="chargerLivre"/>
+    <ownedOperation xmi:id="_XusccFKEEey86ZbEHZxXpg" name="creerPDF"/>
+    <ownedOperation xmi:id="_2gf8wFKEEey86ZbEHZxXpg" name="confirmationPDF"/>
+    <ownedOperation xmi:id="_hqLt0FKHEey86ZbEHZxXpg" name="formulaireSection"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_CuVHgFEEEeyHtIrG4NUXqg" name="GestionLivre">
     <eAnnotations xmi:id="_CumNQFEEEeyHtIrG4NUXqg" source="uml2.diagrams" references="_CumNQVEEEeyHtIrG4NUXqg">
@@ -991,11 +1004,7 @@
     <ownedAttribute xmi:id="_5BjDsFEEEeyHtIrG4NUXqg" name="nom" visibility="private"/>
     <ownedAttribute xmi:id="_6wyMsFEEEeyHtIrG4NUXqg" name="premierePage" visibility="private" type="_StTssFEEEeyHtIrG4NUXqg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_FTmgoFEEEeyHtIrG4NUXqg" name="GestionnaireLivre">
-    <ownedOperation xmi:id="_57aOcFEFEeyHtIrG4NUXqg" name="creerLivre"/>
-    <ownedOperation xmi:id="_65XEcFEFEeyHtIrG4NUXqg" name="chargerLivre"/>
-    <ownedOperation xmi:id="_8Yps8FEFEeyHtIrG4NUXqg" name="sauvegarderLivre"/>
-  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FTmgoFEEEeyHtIrG4NUXqg" name="GestionnaireLivre"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_StTssFEEEeyHtIrG4NUXqg" name="Section">
     <ownedAttribute xmi:id="_eBtZIFEEEeyHtIrG4NUXqg" name="livre" visibility="private" type="_Eb-8IFEEEeyHtIrG4NUXqg" association="_eBrj8FEEEeyHtIrG4NUXqg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eBtZIlEEEeyHtIrG4NUXqg" value="1"/>
@@ -1086,9 +1095,7 @@
       </contents>
     </eAnnotations>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_k_dY8FEFEeyHtIrG4NUXqg" name="GestionnaireAnalyse">
-    <ownedOperation xmi:id="_qvkWYFEFEeyHtIrG4NUXqg" name="analyseGraphe"/>
-  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_k_dY8FEFEeyHtIrG4NUXqg" name="GestionnaireAnalyse"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_dzFm8FEHEeyHtIrG4NUXqg" supplier="_YfY1gFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_e8dp0FEHEeyHtIrG4NUXqg" supplier="_RynbgFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_nGnn0FEHEeyHtIrG4NUXqg" supplier="_QzbPYFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
@@ -1552,6 +1559,18 @@
   <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_eG4boVKGEeyS2NJT3Vczcw" name="ReceiveOperationEvent4" operation="_eG30kFKGEeyS2NJT3Vczcw"/>
   <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_nvxMAVKHEeyS2NJT3Vczcw" name="SendOperationEvent5" operation="_nvxMAFKHEeyS2NJT3Vczcw"/>
   <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_nvxzEFKHEeyS2NJT3Vczcw" name="ReceiveOperationEvent5" operation="_nvxMAFKHEeyS2NJT3Vczcw"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_U3y14FKGEeyhyaukYmKzUg" name="SendOperationEvent5" operation="_U3yO0FKGEeyhyaukYmKzUg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_U3y14VKGEeyhyaukYmKzUg" name="ReceiveOperationEvent5" operation="_U3yO0FKGEeyhyaukYmKzUg"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_XutDgFKEEey86ZbEHZxXpg" name="SendOperationEvent3" operation="_XusccFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_XutDgVKEEey86ZbEHZxXpg" name="ReceiveOperationEvent3" operation="_XusccFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_aMQEAVKEEey86ZbEHZxXpg" name="SendOperationEvent4" operation="_aMQEAFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_aMQrEFKEEey86ZbEHZxXpg" name="ReceiveOperationEvent4" operation="_aMQEAFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_qCQ6cFKEEey86ZbEHZxXpg" name="SendOperationEvent6" operation="_qCQTYFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_qCRhgFKEEey86ZbEHZxXpg" name="ReceiveOperationEvent6" operation="_qCQTYFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_2ghK4FKEEey86ZbEHZxXpg" name="SendOperationEvent7" operation="_2gf8wFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_2ghx8FKEEey86ZbEHZxXpg" name="ReceiveOperationEvent7" operation="_2gf8wFKEEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:SendOperationEvent" xmi:id="_hqNjAFKHEey86ZbEHZxXpg" name="SendOperationEvent8" operation="_hqLt0FKHEey86ZbEHZxXpg"/>
+  <packagedElement xmi:type="uml:ReceiveOperationEvent" xmi:id="_hqOKEFKHEey86ZbEHZxXpg" name="ReceiveOperationEvent8" operation="_hqLt0FKHEey86ZbEHZxXpg"/>
   <profileApplication xmi:id="_5pFhpVEAEeyfRtliTj7SuA">
     <eAnnotations xmi:id="_5pFhplEAEeyfRtliTj7SuA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
