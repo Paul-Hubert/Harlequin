@@ -1100,6 +1100,43 @@
       </eAnnotations>
     </ownedBehavior>
   </packagedElement>
+  <packagedElement xmi:type="uml:Collaboration" xmi:id="_N5v0wFJ9Eey6E7mkK3S-1A" name="Collaboration1">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_N6hQ0FJ9Eey6E7mkK3S-1A" name="Interaction1">
+      <eAnnotations xmi:id="_N7gvUFJ9Eey6E7mkK3S-1A" source="uml2.diagrams">
+        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_N780MFJ9Eey6E7mkK3S-1A" type="Sequence" element="_N6hQ0FJ9Eey6E7mkK3S-1A" name="DiagrammeSéquence1" measurementUnit="Himetric">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_N780MVJ9Eey6E7mkK3S-1A" element="_N6hQ0FJ9Eey6E7mkK3S-1A" fontName="Noto Sans" fontHeight="8" fillColor="16250871" transparency="0" lineColor="12632258" lineWidth="1" showStereotype="Label">
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_N780MlJ9Eey6E7mkK3S-1A" type="interaction_compartment">
+              <children xmi:type="umlnotation:UMLShape" xmi:id="_YOurkFJ9Eey6E7mkK3S-1A" element="_YOgpIFJ9Eey6E7mkK3S-1A" fontName="Noto Sans" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+                <eAnnotations xmi:id="_YOvSoFJ9Eey6E7mkK3S-1A" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+                  <details xmi:id="_YOvSoVJ9Eey6E7mkK3S-1A" key="LifelineLabelStyle" value="Represents Name and Type Name"/>
+                </eAnnotations>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_YOvSolJ9Eey6E7mkK3S-1A" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_YOvSo1J9Eey6E7mkK3S-1A" type="Name"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_YOv5sFJ9Eey6E7mkK3S-1A" type="Parent"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YOurkVJ9Eey6E7mkK3S-1A" x="-7665" y="185" width="2989" height="9525"/>
+              </children>
+              <children xmi:type="umlnotation:UMLShape" xmi:id="_TW1vkFJ9Eey6E7mkK3S-1A" element="_TWntIFJ9Eey6E7mkK3S-1A" fontName="Noto Sans" fontHeight="8" fillColor="16116705" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+                <eAnnotations xmi:id="_TW2WoFJ9Eey6E7mkK3S-1A" source="com.ibm.xtools.uml.ui.diagram.internal.styles">
+                  <details xmi:id="_TW6BAFJ9Eey6E7mkK3S-1A" key="LifelineLabelStyle" value="Represents Name and Type Name"/>
+                </eAnnotations>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_TW6oEFJ9Eey6E7mkK3S-1A" type="Stereotype"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_TW6oEVJ9Eey6E7mkK3S-1A" type="Name"/>
+                <children xmi:type="notation:BasicDecorationNode" xmi:id="_TW8dQFJ9Eey6E7mkK3S-1A" type="Parent"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TW1vkVJ9Eey6E7mkK3S-1A" x="24236" y="1109" width="4497" height="9525"/>
+              </children>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_N780M1J9Eey6E7mkK3S-1A" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_N780NFJ9Eey6E7mkK3S-1A" x="793" y="793"/>
+          </children>
+        </contents>
+      </eAnnotations>
+      <lifeline xmi:id="_TWntIFJ9Eey6E7mkK3S-1A" name="cGeneration" represents="_TWoUMFJ9Eey6E7mkK3S-1A"/>
+      <lifeline xmi:id="_YOgpIFJ9Eey6E7mkK3S-1A" name="auteur" represents="_YOhQMFJ9Eey6E7mkK3S-1A"/>
+    </ownedBehavior>
+    <ownedAttribute xmi:id="_TWoUMFJ9Eey6E7mkK3S-1A" name="cGeneration" type="_OHUOcFEDEeyHtIrG4NUXqg"/>
+    <ownedAttribute xmi:id="_YOhQMFJ9Eey6E7mkK3S-1A" name="auteur" type="_XChXIFJ9Eey6E7mkK3S-1A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_XChXIFJ9Eey6E7mkK3S-1A" name="Auteur"/>
   <profileApplication xmi:id="_5pFhpVEAEeyfRtliTj7SuA">
     <eAnnotations xmi:id="_5pFhplEAEeyfRtliTj7SuA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
