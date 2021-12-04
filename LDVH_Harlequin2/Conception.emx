@@ -4018,6 +4018,41 @@
     <packagedElement xmi:type="uml:Usage" xmi:id="_gaUnoFUoEeyW5Ojm0h9dmQ" supplier="_TuSeAFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_kXNT8FUoEeyW5Ojm0h9dmQ" supplier="_S9FDgFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_mRJREFUoEeyW5Ojm0h9dmQ" supplier="_Uu18EFEDEeyHtIrG4NUXqg" client="_ob0dAFEDEeyHtIrG4NUXqg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YCiLYFUqEeyW5Ojm0h9dmQ" name="CFactory">
+      <ownedOperation xmi:id="_cUGHMFUqEeyW5Ojm0h9dmQ" name="createLivre">
+        <ownedParameter xmi:id="_f__xMFUqEeyW5Ojm0h9dmQ" name="livre" type="_QzbPYFEDEeyHtIrG4NUXqg" direction="return"/>
+        <ownedParameter xmi:id="_3ee04FUqEeyW5Ojm0h9dmQ" name="Titre">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_SqKjEFUrEeyW5Ojm0h9dmQ" name="createCLivre">
+        <ownedParameter xmi:id="_WZdfUFUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_MhGekFEDEeyHtIrG4NUXqg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_fWj9MFUrEeyW5Ojm0h9dmQ" name="createCGeneration">
+        <ownedParameter xmi:id="_lzzGYFUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_OHUOcFEDEeyHtIrG4NUXqg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_hLCykFUrEeyW5Ojm0h9dmQ" name="createCAnalyse">
+        <ownedParameter xmi:id="_kOXZoFUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_fHPlMFEBEeyfRtliTj7SuA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_jBq9AFUrEeyW5Ojm0h9dmQ" name="createCIHM">
+        <ownedParameter xmi:id="_oA8TYFUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_ob0dAFEDEeyHtIrG4NUXqg" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_tYpX4FUrEeyW5Ojm0h9dmQ" name="createCLivreBouchon">
+        <ownedParameter xmi:id="_voJ8YFUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_En8-0FUmEeyW5Ojm0h9dmQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_36ipUFUrEeyW5Ojm0h9dmQ" name="createCTestAnalyse">
+        <ownedParameter xmi:id="_-bzW4FUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_s3JOUFUgEeyW5Ojm0h9dmQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_5e4J4FUrEeyW5Ojm0h9dmQ" name="createCTestGeneration">
+        <ownedParameter xmi:id="__9UM8FUrEeyW5Ojm0h9dmQ" name="Parameter1" type="_uzoJIFUgEeyW5Ojm0h9dmQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_6-DdoFUrEeyW5Ojm0h9dmQ" name="createCTestLivre">
+        <ownedParameter xmi:id="_D2caoFUsEeyW5Ojm0h9dmQ" name="Parameter1" type="_qgop8FUgEeyW5Ojm0h9dmQ" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8pVTsFUrEeyW5Ojm0h9dmQ" name="createCTestIHM">
+        <ownedParameter xmi:id="_CDzYUFUsEeyW5Ojm0h9dmQ" name="Parameter1" type="_xtmm8FUgEeyW5Ojm0h9dmQ" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
     <profileApplication xmi:id="_5pFhpVEAEeyfRtliTj7SuA">
       <eAnnotations xmi:id="_5pFhplEAEeyfRtliTj7SuA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
