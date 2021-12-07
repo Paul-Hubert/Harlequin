@@ -998,7 +998,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAeQoB99EeyvIfpBXTl4zA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AiZqcB-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_v16XoB-NEeyDGcnFoIbSUQ" name="premierePage" visibility="private" type="_CFadsB99EeyvIfpBXTl4zA"/>
     </packagedElement>
@@ -1016,7 +1016,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lRdTsB-IEeyDGcnFoIbSUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1odP8B-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KwOxoC_4EeyC4sY7_Sa8Ww" name="texte" visibility="private"/>
       <ownedAttribute xmi:id="_ITdGkDVxEeyZd84-EKIWLA" name="enchainement2" visibility="private" type="_DB9lgB99EeyvIfpBXTl4zA" association="_ITT8oDVxEeyZd84-EKIWLA">
@@ -1049,7 +1049,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lRfv8B-IEeyDGcnFoIbSUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rG9AEB-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TLUEIDV1Eey8NtmZJ1c2_g" name="enchainement" visibility="private" type="_DB9lgB99EeyvIfpBXTl4zA" association="_TLK6MDV1Eey8NtmZJ1c2_g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLXHcDV1Eey8NtmZJ1c2_g" value="*"/>
@@ -1102,7 +1102,7 @@
       <ownedOperation xmi:id="_FYndICUKEeyUiKkptB43TQ" name="generationHTML"/>
       <ownedOperation xmi:id="_L6cycCUKEeyUiKkptB43TQ" name="analyseGraphe">
         <ownedParameter xmi:id="_cyMysCUKEeyUiKkptB43TQ" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+          <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH%5D$uml.Class"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_l89coCULEeyUiKkptB43TQ" name="creationHTML"/>

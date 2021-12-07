@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
-<!--Rational Software Architect Designer 9.7.0.1-->
+<!--Rational Software Architect Designer 9.7.0-->
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
 <?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REST="http:///schemas/REST/_w_xMoDeXEea7zJ8GtyuLLw/26" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/REST/_w_xMoDeXEea7zJ8GtyuLLw/26 pathmap://RESTProfile/REST.epx#_w_1eEDeXEea7zJ8GtyuLLw?REST/REST?">
@@ -1574,7 +1574,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAeQoB99EeyvIfpBXTl4zA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_AiZqcB-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_v16XoB-NEeyDGcnFoIbSUQ" name="premierePage" visibility="private" type="_CFadsB99EeyvIfpBXTl4zA"/>
     </packagedElement>
@@ -1592,7 +1592,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lRdTsB-IEeyDGcnFoIbSUQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1odP8B-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_KwOxoC_4EeyC4sY7_Sa8Ww" name="texte" visibility="private"/>
       <ownedAttribute xmi:id="_ITdGkDVxEeyZd84-EKIWLA" name="enchainement2" visibility="private" type="_DB9lgB99EeyvIfpBXTl4zA" association="_ITT8oDVxEeyZd84-EKIWLA">
@@ -1625,7 +1625,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lRfv8B-IEeyDGcnFoIbSUQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_rG9AEB-LEeyDGcnFoIbSUQ" name="nom" visibility="private">
-        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+        <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.String%5Bproject%5Eid=LDVH%5D$uml.Class"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_TLUEIDV1Eey8NtmZJ1c2_g" name="enchainement" visibility="private" type="_DB9lgB99EeyvIfpBXTl4zA" association="_TLK6MDV1Eey8NtmZJ1c2_g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLXHcDV1Eey8NtmZJ1c2_g" value="*"/>
@@ -3686,7 +3686,7 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_F0EugDV7Eey8NtmZJ1c2_g" name="GestionnaireAnalyse">
       <ownedOperation xmi:id="_L6cycCUKEeyUiKkptB43TQ" name="analyseGraphe">
         <ownedParameter xmi:id="_cyMysCUKEeyUiKkptB43TQ" name="Parameter1" direction="return">
-          <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH_code%5D$uml.Class"/>
+          <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Boolean%5Bproject%5Eid=LDVH%5D$uml.Class"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>

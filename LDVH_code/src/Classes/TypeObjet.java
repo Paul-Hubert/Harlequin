@@ -13,6 +13,12 @@ import java.util.Set;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class TypeObjet implements ITypeObjet {
+	
+	public TypeObjet(String n) {
+		this.nom=n;
+	}
+	
+	
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

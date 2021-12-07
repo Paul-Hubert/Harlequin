@@ -13,6 +13,22 @@ import java.util.Set;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class Objet implements IObjet {
+	
+	public Objet(String n) {
+		this.nom=n;
+	}
+	
+	public Objet(String n, Section s) {
+		this.nom=n;
+		this.section=s;
+		s.addObjet(this);
+	}
+	
+	public Objet(String n, Set<TypeObjet> ty) {
+		this.nom=n;
+		this.typeObjet=ty;
+	}
+	
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

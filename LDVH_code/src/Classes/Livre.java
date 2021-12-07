@@ -4,6 +4,9 @@
 package Classes;
 
 import Interfaces.ILivre;
+
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 /** 
@@ -18,6 +21,79 @@ public class Livre implements ILivre {
 	* <!-- end-UML-doc -->
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
+	
+	public Livre(String titre, Section pPage) {
+		this.nom=titre;
+		this.premierePage=pPage;
+		this.section=new HashSet<Section>();
+		this.section.add(pPage);
+	}
+	
+	public Livre(String titre) {
+		this.nom=titre;
+		this.section=new HashSet<Section>();
+	}
+	
+	public void createSection(String texte, String nom) {
+		Section s = new Section(nom, texte);
+		
+		section.add(s);
+	}
+	
+	public void createEnchainement(String texte, String nom, Section s1, Section s2, Set<Objet> o, Set<TypeObjet> ty) {
+		Enchainement e = new Enchainement(nom, s1, s2,texte, o, ty);
+		s1.getEnchainementDepart().add(e);
+		s2.getEnchainementArrivee().add(e);
+	}
+	
+	public void createEnchainement(String texte, String nom, Section s1, Section s2, Set<Objet> o) {
+		Enchainement e = new Enchainement(nom, s1, s2, o, texte);
+		s1.getEnchainementDepart().add(e);
+		s2.getEnchainementArrivee().add(e);
+	}
+	
+	public void createEnchainement(String texte, String nom, Section s1, Section s2) {
+		Enchainement e = new Enchainement(nom, s1, s2, texte);
+		s1.getEnchainementDepart().add(e);
+		s2.getEnchainementArrivee().add(e);
+	}
+	
+	public Set<Objet> getObjets(){
+		Set<Objet> objets=new HashSet<Objet>();
+		for(Section s : this.section) {
+			objets.addAll(s.getObjet());
+		}
+		return objets;
+	}
+	
+	public Objet getObjet(String o) {
+		Set<Objet> objets = getObjets();
+		for(Objet obj : objets) {
+			if(obj.getNom()==o)return obj;
+		}
+		return null;
+	}
+	
+	public Set<Objet> getObjets(String[] o){
+		Set<Objet> obj = new HashSet<Objet>();
+		for(String s : o) {
+			obj.add(getObjet(s));
+		}
+		return obj;
+	}
+	
+	public void setPremiere(Section s) {
+		this.premierePage=s;
+		if(!section.contains(s))section.add(s);
+	}
+	
+	public Section getOneSection(String s) {
+		for(Section sec : this.section) {
+			if(sec.getNom().equals(s))return sec;
+		}
+		return null;
+	}
+	
 	private Set<Section> section;
 
 	/** 

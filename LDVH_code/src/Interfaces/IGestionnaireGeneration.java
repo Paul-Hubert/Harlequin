@@ -3,6 +3,10 @@
  */
 package Interfaces;
 
+import java.io.IOException;
+
+import com.itextpdf.text.DocumentException;
+
 import Classes.Livre;
 
 /** 
@@ -26,7 +30,9 @@ public interface IGestionnaireGeneration {
 	* <!-- end-UML-doc -->
 	* @param livre
 	* @return
+	 * @throws DocumentException 
+	 * @throws IOException 
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean creerPDF(Livre livre);
+	public Boolean creerPDF(Livre livre) throws IOException, DocumentException;
 }

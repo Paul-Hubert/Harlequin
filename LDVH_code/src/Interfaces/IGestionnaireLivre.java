@@ -28,7 +28,7 @@ public interface IGestionnaireLivre {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean chargerLivre(String path);
+	public Livre chargerLivre(String path);
 
 	/** 
 	* <!-- begin-UML-doc -->

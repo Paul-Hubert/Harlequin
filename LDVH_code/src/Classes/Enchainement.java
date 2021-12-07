@@ -4,6 +4,8 @@
 package Classes;
 
 import Interfaces.IEnchainement;
+
+import java.util.HashSet;
 import java.util.Set;
 
 /** 
@@ -13,6 +15,79 @@ import java.util.Set;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class Enchainement implements IEnchainement {
+	
+	public Enchainement(String n, Section s1, Section s2, String t, Set<Objet> o, Set<TypeObjet> ty) {
+		this.nom=n;
+		this.objet=o;
+		this.section=s1;
+		this.section2=s2;
+		this.texte=t;
+		this.typeObjet=ty;
+		this.objet=new HashSet<Objet>();
+	}
+	
+	public Enchainement(String n, Section s1, Section s2, Set<Objet> o, String t) {
+		this.nom=n;
+		this.objet=o;
+		this.section=s1;
+		this.section2=s2;
+		this.texte=t;
+		this.typeObjet=new HashSet<TypeObjet>();
+	}
+	
+	public Enchainement(String n, Section s1, Section s2, String t, Set<TypeObjet> ty) {
+		this.nom=n;
+		this.section=s1;
+		this.section2=s2;
+		this.texte=t;
+		this.typeObjet=ty;
+		this.objet=new HashSet<Objet>();
+	}
+	
+	public Enchainement(String n, Set<Objet> o, Section s1, Section s2, String t) {
+		this.nom=n;
+		this.objet=o;
+		this.section=s1;
+		this.section2=s2;
+		this.texte=t;
+		this.typeObjet=new HashSet<TypeObjet>();
+		this.objet=new HashSet<Objet>();
+	}
+	
+	public Enchainement(String n, Section s1, Section s2, Set<TypeObjet> ty) {
+		this.nom=n;
+		this.section=s1;
+		this.section2=s2;
+		this.typeObjet=ty;
+		this.objet=new HashSet<Objet>();
+	}
+
+	
+	public Enchainement(String n, Set<Objet> o, Section s1, Section s2) {
+		this.nom=n;
+		this.objet=o;
+		this.section=s1;
+		this.section2=s2;
+		this.typeObjet=new HashSet<TypeObjet>();
+	}
+	
+	public Enchainement(String n, Section s1, Section s2) {
+		this.nom=n;
+		this.section=s1;
+		this.section2=s2;
+		this.typeObjet=new HashSet<TypeObjet>();
+		this.objet=new HashSet<Objet>();
+	}
+	
+	public Enchainement(String n, Section s1, Section s2, String t) {
+		this.nom=n;
+		this.section=s1;
+		this.section2=s2;
+		this.texte=t;
+		this.typeObjet=new HashSet<TypeObjet>();
+		this.objet=new HashSet<Objet>();
+	}
+	
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

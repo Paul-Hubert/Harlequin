@@ -22,7 +22,7 @@ public class CFactory {
 	public ILivre createLivre(String Titre) {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return  new Livre("test");
 		// end-user-code
 	}
 
@@ -35,7 +35,7 @@ public class CFactory {
 	public Object createCLivre() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return new GestionnaireLivre();
 		// end-user-code
 	}
 
@@ -48,7 +48,7 @@ public class CFactory {
 	public Object createCGeneration() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return new GestionnaireGeneration();
 		// end-user-code
 	}
 
@@ -61,7 +61,7 @@ public class CFactory {
 	public Object createCAnalyse() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return new GestionnaireAnalyse();
 		// end-user-code
 	}
 
