@@ -228,5 +228,6 @@ public class Section implements ISection {
 
 	public void addObjet(Objet o) {
 		this.objet.add(o);
+		o.setSection(this);
 	}
 }

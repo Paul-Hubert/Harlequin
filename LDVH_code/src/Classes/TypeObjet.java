@@ -18,6 +18,14 @@ public class TypeObjet implements ITypeObjet {
 		this.nom=n;
 	}
 	
+
+	public boolean isIn(Set<TypeObjet>t) {
+		for(TypeObjet ty : t) {
+			if(ty==this)return true;
+		}
+		return false;
+	}
+	
 	
 	/** 
 	* <!-- begin-UML-doc -->

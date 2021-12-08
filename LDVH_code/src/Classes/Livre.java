@@ -82,6 +82,34 @@ public class Livre implements ILivre {
 		return obj;
 	}
 	
+	public Set<TypeObjet> getTypeObjets(){
+		Set<Objet> objets=getObjets();
+		Set<TypeObjet>typeObjets=new HashSet<TypeObjet>();
+		for(Objet o : objets) {
+			Set<TypeObjet>ty = o.getTypeObjet();
+			for(TypeObjet t : ty) {
+				if(!t.isIn(typeObjets))typeObjets.add(t);
+			}
+		}
+		return typeObjets;
+	}
+	
+	public TypeObjet getTypeObjet(String t) {
+		Set<TypeObjet> typeobjets = getTypeObjets();
+		for(TypeObjet ty : typeobjets) {
+			if(ty.getNom()==t)return ty;
+		}
+		return null;
+	}
+	
+	public Set<Objet> getTypeObjets(String[] o){
+		Set<Objet> obj = new HashSet<Objet>();
+		for(String s : o) {
+			obj.add(getObjet(s));
+		}
+		return obj;
+	}
+	
 	public void setPremiere(Section s) {
 		this.premierePage=s;
 		if(!section.contains(s))section.add(s);
