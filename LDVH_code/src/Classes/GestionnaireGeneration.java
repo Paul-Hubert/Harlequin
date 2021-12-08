@@ -163,7 +163,6 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 					document.add(new Paragraph(e.getNom()+" (en page "+pages.get(e.getSection2())+") : "+e.getTexte(), f14));
 					for(Objet o : e.getObjet()) {
 						str = str + o.getNom() +" / ";
-						System.out.println(o.getNom());
 					}
 					if(e.getObjet().size()!=0)str = str.substring(0, str.length()-2);
 					document.add(new Paragraph(str, f14));

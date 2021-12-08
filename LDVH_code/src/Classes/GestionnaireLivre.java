@@ -24,13 +24,27 @@ public class GestionnaireLivre implements IGestionnaireLivre {
 	private LinkedList<Livre> livres;
 	
 	public GestionnaireLivre() {
+		this.livres = new LinkedList<Livre>();
 	}
 	
 	public Boolean ajouterLivre(Livre livre) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.livres.add(livre);
+		return true;
+	}
+	
+	public Livre getCourant() {
+		return this.courant;
+	}
+	
+	public LinkedList<Livre> getLivres(){
+		return this.livres;
+	}
+	
+	public Livre getLivre(String s) {
+		for(Livre l : livres) {
+			if(l.getNom().equals(s))return l;
+		}
 		return null;
-		// end-user-code
 	}
 
 	/** 
@@ -38,11 +52,9 @@ public class GestionnaireLivre implements IGestionnaireLivre {
 	* @see IGestionnaireLivre#chargerLivre(String path)
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Livre chargerLivre(String path) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
-		// end-user-code
+	public Livre chargerLivre(Livre livre) {
+		this.courant=livre;
+		return this.courant;
 	}
 
 	/** 
@@ -51,8 +63,9 @@ public class GestionnaireLivre implements IGestionnaireLivre {
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
 	public Livre creerLivre(String path, String titre) {
-		courant = new Livre(titre,new Section("Premiere Page", "a modifier"));
-		return null;
+		courant = new Livre(titre);
+		this.livres.add(courant);
+		return courant;
 		// end-user-code
 	}
 
@@ -90,5 +103,11 @@ public class GestionnaireLivre implements IGestionnaireLivre {
 		// TODO Module de remplacement de méthode auto-généré
 
 		// end-user-code
+	}
+
+	@Override
+	public Livre chargerLivre(String path) {
+		// TODO Module de remplacement de méthode auto-généré
+		return null;
 	}
 }
