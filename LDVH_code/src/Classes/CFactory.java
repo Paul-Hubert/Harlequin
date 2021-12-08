@@ -22,7 +22,7 @@ public class CFactory {
 	public ILivre createLivre(String Titre) {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
-		return  new Livre("test");
+		return  new Livre(Titre);
 		// end-user-code
 	}
 
