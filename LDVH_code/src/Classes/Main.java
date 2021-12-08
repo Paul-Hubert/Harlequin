@@ -14,7 +14,7 @@ public class Main {
 	public static void demoA() throws Exception {
 		CFactory factory = new CFactory();
 		GestionnaireLivre gestLivres=(GestionnaireLivre) factory.createCLivre();
-		Livre livreDEMOA = (Livre) factory.createLivre("Robinson Crusoé");
+		Livre livreDEMOA = (Livre) factory.createLivre("Robinson Crusoe");
 		gestLivres.ajouterLivre(livreDEMOA);
 		livreDEMOA.createSection("Dans cette histoire, vous incarnez Robinson Crusoé. Vous vous réveillez sur une ile perdu en mer alors que vous aviez perdu connaissance et chercher maintenant a vous en echapper.\nfaites attention ou vous mettez les pieds, le chemin vers la liberté est semé d'embuche !", "Ile principale");
 		livreDEMOA.createSection("Vous vous trouvez maintenant au bord de la mer, vous pouvez appercevoir l'ile principale ainsi qu'une ile secondaire qui a l'air habitée.", "Mer");

@@ -3,6 +3,7 @@
  */
 package Interfaces;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.itextpdf.text.DocumentException;
@@ -21,9 +22,11 @@ public interface IGestionnaireGeneration {
 	* <!-- end-UML-doc -->
 	* @param livre
 	* @return
+	 * @throws FileNotFoundException 
+	 * @throws IOException 
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean creerHTML(Livre livre);
+	public Boolean creerHTML(Livre livre) throws FileNotFoundException, IOException;
 
 	/** 
 	* <!-- begin-UML-doc -->
