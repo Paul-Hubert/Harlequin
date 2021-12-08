@@ -776,7 +776,6 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 				}
 			}
 		}
-		document.add(chapitre);
 		document.close();
 		writer.close();
 
