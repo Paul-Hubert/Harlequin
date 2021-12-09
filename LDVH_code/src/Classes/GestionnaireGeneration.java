@@ -562,6 +562,11 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 					str2 = str2 + o.getNom() + " ";
 				}
 				str2 = str2 + ")</li>";
+				str2 = str2 + "( Type d'objets requis : ";
+				for(TypeObjet ty : e.getTypeObjet()) {
+					str2 = str2 + ty.getNom() + " ";
+				}
+				str2 = str2 + ")</li><br><br>";
 			}
 			str2 = str2 +"  </ul>" +
 					//affichage enchainement avec un formulaire
