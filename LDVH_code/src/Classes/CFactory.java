@@ -3,6 +3,9 @@
  */
 package Classes;
 
+import Interfaces.IGestionnaireAnalyse;
+import Interfaces.IGestionnaireGeneration;
+import Interfaces.IGestionnaireLivre;
 import Interfaces.ILivre;
 
 /** 
@@ -30,7 +33,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCLivre() {
+	public IGestionnaireLivre createCLivre() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return new GestionnaireLivre();
@@ -43,7 +46,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCGeneration() {
+	public IGestionnaireGeneration createCGeneration() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return new GestionnaireGeneration();
@@ -56,7 +59,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCAnalyse() {
+	public IGestionnaireAnalyse createCAnalyse() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return new GestionnaireAnalyse();
@@ -82,7 +85,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCLivreBouchon() {
+	public ILivre createCLivreBouchon() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return null;
@@ -95,7 +98,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCTestAnalyse() {
+	public IGestionnaireAnalyse createCTestAnalyse() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return null;
@@ -108,7 +111,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCTestGeneration() {
+	public IGestionnaireGeneration createCTestGeneration() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return null;
@@ -121,7 +124,7 @@ public class CFactory {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Object createCTestLivre() {
+	public ILivre createCTestLivre() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return null;

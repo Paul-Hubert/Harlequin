@@ -13,7 +13,7 @@ import Classes.Livre;
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
- * @author 21116461
+ * @author quentin
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public interface IGestionnaireGeneration {
@@ -22,20 +22,16 @@ public interface IGestionnaireGeneration {
 	* <!-- end-UML-doc -->
 	* @param livre
 	* @return
-	 * @throws FileNotFoundException 
-	 * @throws IOException 
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean creerHTML(Livre livre) throws FileNotFoundException, IOException;
+	public void creerHTML(Livre livre) throws FileNotFoundException, IOException;
 
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->
 	* @param livre
 	* @return
-	 * @throws DocumentException 
-	 * @throws IOException 
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean creerPDF(Livre livre) throws IOException, DocumentException;
+	public void creerPDF(Livre livre) throws IOException, DocumentException;
 }

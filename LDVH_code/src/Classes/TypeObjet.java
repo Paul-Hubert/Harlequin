@@ -9,24 +9,23 @@ import java.util.Set;
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
- * @author 21116461
+ * @author quentin
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class TypeObjet implements ITypeObjet {
-	
-	public TypeObjet(String n) {
-		this.nom=n;
-	}
-	
 
-	public boolean isIn(Set<TypeObjet>t) {
-		for(TypeObjet ty : t) {
-			if(ty==this)return true;
+	public TypeObjet(String n) {
+		this.nom = n;
+	}
+
+	public boolean isIn(Set<TypeObjet> t) {
+		for (TypeObjet ty : t) {
+			if (ty == this)
+				return true;
 		}
 		return false;
 	}
-	
-	
+
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

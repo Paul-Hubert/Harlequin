@@ -3,15 +3,24 @@
  */
 package Interfaces;
 
+import java.util.LinkedList;
+
 import Classes.Livre;
 
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
- * @author 21116461
+ * @author quentin
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public interface IGestionnaireLivre {
+
+	public Livre getCourant();
+
+	public LinkedList<Livre> getLivres();
+
+	public Livre getLivre(String s);
+
 	/** 
 	* <!-- begin-UML-doc -->
 	* <!-- end-UML-doc -->

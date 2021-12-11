@@ -4,12 +4,13 @@
 package Interfaces;
 
 import Classes.Section;
+import java.util.Set;
 import Classes.Objet;
 
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
- * @author 21116461
+ * @author quentin
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public interface ISection {
@@ -31,5 +32,5 @@ public interface ISection {
 	* @return
 	* @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	*/
-	public Boolean editerSection(Section section, Objet objets, String texte);
+	public Boolean editerSection(Section section, Set<Objet> objets, String texte);
 }

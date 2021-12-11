@@ -30,7 +30,7 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 
 	}
 
-	public Boolean creerHTML(Livre livre) throws IOException {
+	public void creerHTML(Livre livre) throws IOException {
 		//creation des dossiers
 		File file = new File("./LivreHTML");
 		if (!file.exists()) file.mkdir();
@@ -552,25 +552,27 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 			for(Objet o : value.getObjet()) {
 				str2 = str2 + "      <li class=\"inline\">"+o.getNom()+"</li>\n";
 			}
-			str2 = str2 +"  </ul>\n" +
-					"  <p>Où choisissez vous de vous rendre ?</p>\n" +
-					"  <ul>\n";
-			//affichage enchainement avec lien cliquable
-			for(Enchainement e : value.getEnchainementDepart()) {
-				str2 = str2 + "      <li> <a href=\"./"+e.getSection2().getNom()+".html\">"+e.getNom()+"</a> : "+e.getTexte()+"<br>( objets requis : ";
-				for(Objet o : e.getObjet()) {
-					str2 = str2 + o.getNom() + " ";
+			if (!value.getEnchainementDepart().isEmpty()) {
+				str2 = str2 +"  </ul>\n" +
+						"  <p>Où choisissez vous de vous rendre ?</p>\n" +
+						"  <ul>\n";
+				//affichage enchainement avec lien cliquable
+				for(Enchainement e : value.getEnchainementDepart()) {
+					str2 = str2 + "      <li> <a href=\"./"+e.getSection2().getNom()+".html\">"+e.getNom()+"</a> : "+e.getTexte()+"<br>( objets requis : ";
+					for(Objet o : e.getObjet()) {
+						str2 = str2 + o.getNom() + " ";
+					}
+					str2 = str2 + ")</li>";
+					str2 = str2 + "( Type d'objets requis : ";
+					for(TypeObjet ty : e.getTypeObjet()) {
+						str2 = str2 + ty.getNom() + " ";
+					}
+					str2 = str2 + ")</li><br><br>";
 				}
-				str2 = str2 + ")</li>";
-				str2 = str2 + "( Type d'objets requis : ";
-				for(TypeObjet ty : e.getTypeObjet()) {
-					str2 = str2 + ty.getNom() + " ";
-				}
-				str2 = str2 + ")</li><br><br>";
+				str2 = str2 +"  </ul>";
 			}
-			str2 = str2 +"  </ul>" +
-					//affichage enchainement avec un formulaire
-					/*
+			//affichage enchainement avec un formulaire
+			/*
 					for(Enchainement e : value.getEnchainementSource()) {
 						str2 = str2 + "      <li>"+e.getNom()+" : "+e.getTexte()+"<br>( objets requis : ";
 						for(IObjet o : e.getObjets()) {
@@ -586,10 +588,10 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 					}
 					str2 = str2 + "</select>"+
 							"<input type=\"submit\"></form>"+
-					 */
-					 "</body>\n" +
-					 "</html>\n" +
-					 "";
+			 */
+			str2 = str2 + "</body>\n" +
+					"</html>\n" +
+					"";
 			FileOutputStream outputStream2 = new FileOutputStream("./LivreHTML/"+livre.getNom()+"/"+value.getNom()+".html");
 			byte[] strToBytes2 = str2.getBytes();
 			outputStream2.write(strToBytes2);
@@ -621,10 +623,9 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 			outputStream2.close();
 		}
 
-		return true;
 	}
 
-	public Boolean creerPDF(Livre l) throws IOException, DocumentException {
+	public void creerPDF(Livre l) throws IOException, DocumentException {
 		File file = new File("./LivrePDF");
 		if (!file.exists()) file.mkdir();
 
@@ -701,26 +702,28 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 		document.add(new Paragraph(" ", f14));
 		document.add(new Paragraph("Où choisissez vous de vous rendre ?", f14));
 		document.add(new Paragraph(" ", f14));
-		for(Enchainement e : l.getPremierePage().getEnchainementDepart()) {
-			str = "Liste des objets requis : ";
-			//Lien vers la page
-			Chunk chunk = new Chunk(" (en page "+pages.get(e.getSection2())+")");
-			chunk.setLocalGoto(""+ pages.get(e.getSection2()));			
-			document.add(new Paragraph(e.getNom(), f14));
-			document.add(chunk);
-			document.add(new Paragraph(e.getTexte(), f14));
-			for(Objet o : e.getObjet()) {
-				str = str + o.getNom() +" / ";
+		if(!l.getPremierePage().getEnchainementDepart().isEmpty()) {
+			for(Enchainement e : l.getPremierePage().getEnchainementDepart()) {
+				str = "Liste des objets requis : ";
+				//Lien vers la page
+				Chunk chunk = new Chunk(" (en page "+pages.get(e.getSection2())+")");
+				chunk.setLocalGoto(""+ pages.get(e.getSection2()));			
+				document.add(new Paragraph(e.getNom(), f14));
+				document.add(chunk);
+				document.add(new Paragraph(e.getTexte(), f14));
+				for(Objet o : e.getObjet()) {
+					str = str + o.getNom() +" / ";
+				}
+				if(e.getObjet().size()!=0)str = str.substring(0, str.length()-2);
+				document.add(new Paragraph(str, f14));
+				str = "Liste des Type d'objets requis : ";
+				for(TypeObjet ty : e.getTypeObjet()) {
+					str = str + ty.getNom() +" / ";
+				}
+				if(e.getTypeObjet().size()!=0)str = str.substring(0, str.length()-2);
+				document.add(new Paragraph(str, f14));
+				document.add(new Paragraph(" ", f14));
 			}
-			if(e.getObjet().size()!=0)str = str.substring(0, str.length()-2);
-			document.add(new Paragraph(str, f14));
-			str = "Liste des Type d'objets requis : ";
-			for(TypeObjet ty : e.getTypeObjet()) {
-				str = str + ty.getNom() +" / ";
-			}
-			if(e.getTypeObjet().size()!=0)str = str.substring(0, str.length()-2);
-			document.add(new Paragraph(str, f14));
-			document.add(new Paragraph(" ", f14));
 		}
 
 		//On fait ensuite toute les autres sections
@@ -759,31 +762,31 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 				document.add(new Paragraph(" ", f14));
 				document.add(new Paragraph("Où choisissez vous de vous rendre ?", f14));
 				document.add(new Paragraph(" ", f14));
-				for(Enchainement e : value.getEnchainementDepart()) {
-					str = "Liste des objets requis : ";
-					Chunk chunk = new Chunk(" (en page "+pages.get(e.getSection2())+")");
-					chunk.setLocalGoto(""+ pages.get(e.getSection2()));			
-					document.add(new Paragraph(e.getNom(), f14));
-					document.add(chunk);
-					document.add(new Paragraph(e.getTexte(), f14));
-					for(Objet o : e.getObjet()) {
-						str = str + o.getNom() +" / ";
+				if(!value.getEnchainementDepart().isEmpty()) {
+					for(Enchainement e : value.getEnchainementDepart()) {
+						str = "Liste des objets requis : ";
+						Chunk chunk = new Chunk(" (en page "+pages.get(e.getSection2())+")");
+						chunk.setLocalGoto(""+ pages.get(e.getSection2()));			
+						document.add(new Paragraph(e.getNom(), f14));
+						document.add(chunk);
+						document.add(new Paragraph(e.getTexte(), f14));
+						for(Objet o : e.getObjet()) {
+							str = str + o.getNom() +" / ";
+						}
+						if(e.getObjet().size()!=0)str = str.substring(0, str.length()-2);
+						document.add(new Paragraph(str, f14));
+						str = "Liste des Type d'objets requis : ";
+						for(TypeObjet ty : e.getTypeObjet()) {
+							str = str + ty.getNom() +" / ";
+						}
+						if(e.getTypeObjet().size()!=0)str = str.substring(0, str.length()-2);
+						document.add(new Paragraph(str, f14));
+						document.add(new Paragraph(" ", f14));
 					}
-					if(e.getObjet().size()!=0)str = str.substring(0, str.length()-2);
-					document.add(new Paragraph(str, f14));
-					str = "Liste des Type d'objets requis : ";
-					for(TypeObjet ty : e.getTypeObjet()) {
-						str = str + ty.getNom() +" / ";
-					}
-					if(e.getTypeObjet().size()!=0)str = str.substring(0, str.length()-2);
-					document.add(new Paragraph(str, f14));
-					document.add(new Paragraph(" ", f14));
 				}
 			}
 		}
 		document.close();
 		writer.close();
-
-		return true;
 	}
 }

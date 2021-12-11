@@ -230,4 +230,10 @@ public class Section implements ISection {
 		this.objet.add(o);
 		o.setSection(this);
 	}
+
+	@Override
+	public Boolean editerSection(Section section, Set<Objet> objets, String texte) {
+		// TODO Module de remplacement de méthode auto-généré
+		return null;
+	}
 }
