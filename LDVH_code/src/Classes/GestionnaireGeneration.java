@@ -23,6 +23,7 @@ import com.itextpdf.text.Font.FontFamily;
 import com.itextpdf.text.pdf.PdfWriter;
 
 import Interfaces.IGestionnaireGeneration;
+import Interfaces.ILivre;
 
 public class GestionnaireGeneration implements IGestionnaireGeneration {
 
@@ -30,7 +31,7 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 
 	}
 
-	public void creerHTML(Livre livre) throws IOException {
+	public void creerHTML(ILivre livre) throws IOException {
 		//creation des dossiers
 		File file = new File("./LivreHTML");
 		if (!file.exists()) file.mkdir();
@@ -625,7 +626,7 @@ public class GestionnaireGeneration implements IGestionnaireGeneration {
 
 	}
 
-	public void creerPDF(Livre l) throws IOException, DocumentException {
+	public void creerPDF(ILivre l) throws IOException, DocumentException {
 		File file = new File("./LivrePDF");
 		if (!file.exists()) file.mkdir();
 

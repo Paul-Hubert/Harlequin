@@ -14,6 +14,7 @@ import com.itextpdf.text.DocumentException;
 
 import Interfaces.IGestionnaireGeneration;
 import Interfaces.IGestionnaireLivre;
+import Interfaces.ILivre;
 
 public class CTestLivre {
 
@@ -93,9 +94,8 @@ public class CTestLivre {
 	@Test
 	public void testUC10GenererPDF() throws IOException, DocumentException {
 		CFactory factory = new CFactory();
-		IGestionnaireLivre livres = factory.createCLivre();
 		IGestionnaireGeneration generateur = factory.createCGeneration();
-		Livre l = livres.creerLivre("", "test");
+		ILivre l = factory.createLivre("test");
 		Section s1 = l.createSection("texte1", "nom1");
 		l.setPremiere(s1);
 		Section s2 = l.createSection("texte2", "nom2");
